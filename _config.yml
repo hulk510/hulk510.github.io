@@ -44,6 +44,9 @@ exclude:
   - package-lock.json
   - README.md
 
+# ビルド時エラー出るため付与してる
+github: [metadata]
+
 # パンクズ
 breadcrumbs: true
 
