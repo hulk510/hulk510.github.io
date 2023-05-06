@@ -18,7 +18,7 @@ baseurl: "" # the subpath of your site, e.g. "/blog"
 collections:
   resume:
     output: true
-    permalink: /:collection/:path
+    permalink: /:collection/:path/
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -27,7 +27,7 @@ minimal_mistakes_skin: "dirt" #"air", "aqua", "contrast", "dark", "dirt", "neon"
 plugins:
   - jekyll-include-cache
 
-include: ["_pages", "_resume"]
+include: ["_pages"]
 
 exclude:
   - .sass-cache/
