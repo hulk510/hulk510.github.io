@@ -1,12 +1,11 @@
 ---
+title: Hi, I'm Haruka.
 layout: home
 permalink: /
 classes: wide
 sidebar:
   nav: tree
 ---
-
-# Hi, I am Haruka
 
 このサイトは、私のポートフォリオや経歴などをまとめるサイトです。
 
