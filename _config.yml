@@ -18,7 +18,7 @@ baseurl: "" # the subpath of your site, e.g. "/blog"
 collections:
   resume:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"

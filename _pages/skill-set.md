@@ -1,7 +1,7 @@
 ---
 title: スキルセット
 layout: single
-permalink: skill-set
+permalink: /skill-set/
 ---
 
 作成中。
