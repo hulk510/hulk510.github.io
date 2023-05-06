@@ -1,47 +1,28 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
 
-title: hulk510
-email: dorian.51069@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kcash510
-github_username:  hulk510
+# Site Settings
+locale: "ja-JP"
+title: "はるか"
+# title_separator: "-"
+# subtitle: # site tagline that appears below site title in masthead
+name: "hulk510"
+description: "An amazing website."
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: "" # the subpath of your site, e.g. "/blog"
+# repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+# teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+# masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "neon" #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 plugins:
   - jekyll-feed
+include:
+  - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -53,3 +34,27 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Site Author
+author:
+  name: "Haruka Goto"
+  avatar: "/assets/images/avatar.png"
+  bio: "Engineer"
+  location: "Osaka, Japan"
+  email: "dorian.51069@gmail.com"
+  links:
+    - label: "Zenn"
+      icon: "fas fa-fw fa-link"
+      url: "https://zenn.dev/hulk510"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/kcash510"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hulk510"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
