@@ -1,0 +1,49 @@
+# main links
+main:
+  - title: "Resume"
+    url: /resume/
+  - title: "Blog"
+    url: /blog
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Resume"
+  #   url: /resume
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+tree:
+  - title: "Links"
+    children:
+      - title: "やりたいこと（作成中）"
+        url: /want-to-do/
+      - title: "スキルセット（作成中）"
+        url: /skill-set/
+      - title: "経歴・職歴"
+        url: /resume/
+
+resume:
+  - title: "2019年"
+    url: /resume/
+    children:
+      - title: "2019年5月〜2021年3月"
+        url: /resume/1/
+      - title: "ホームページのトップページリニューアル対応"
+        url: /resume/2/
+      - title: "採用やメンターなどエンジニア外の業務遂行"
+        url: /resume/3/
+      - title: "予約サービスのAPI開発"
+        url: /resume/4/
+      - title: "ECサイトのフルリニューアルに合わせて、会員基盤の実装と各所基盤連携"
+        url: /resume/5/
+      - title: "C2CプラットフォームのWebサービス開発"
+        url: /resume/6/
+      - title: "SwiftUIを使ってリモートでの孤独感を埋めるアプリの0→1開発"
+        url: /resume/7/
+      - title: "レンタルサービスのECサイトの開発"
+        url: /resume/8/
+      - title: "通話アプリからスレッド機能へのピボット開発"
+        url: /resume/9/

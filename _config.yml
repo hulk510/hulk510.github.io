@@ -2,26 +2,32 @@
 
 # Site Settings
 locale: "ja-JP"
-title: "はるか"
-# title_separator: "-"
-# subtitle: # site tagline that appears below site title in masthead
-name: "hulk510"
-description: "An amazing website."
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title: "I am Haruka."
+title_separator: "@"
+subtitle: "Version 1.0" # site tagline that appears below site title in masthead
+name: &name "Haruka Goto"
+description: &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+url: "https://hulk510.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 # repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 # teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 # masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 
+# Collections
+collections:
+  resume:
+    output: true
+    permalink: /:collection/:path
+
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "neon" #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dirt" #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 plugins:
   - jekyll-feed
-include:
-  - _pages
+
+include: ["_pages"]
 
 exclude:
   - .sass-cache/
@@ -34,10 +40,16 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - README.md
+
+# パンクズ
+breadcrumbs: true
 
 # Site Author
 author:
-  name: "Haruka Goto"
+  name: *name
   avatar: "/assets/images/avatar.png"
   bio: "Engineer"
   location: "Osaka, Japan"
@@ -58,3 +70,60 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/kcash510"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hulk510"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: ""
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "tree"
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      permalink: /blog/:title # schemaエラーの消し方分からん
+      # share: true
+  # _resume
+  - scope:
+      path: ""
+      type: resume
+    values:
+      layout: single
+      author_profile: true
+      toc: true
+      toc_sticky: true
+      classes: wide
+      sidebar:
+        nav: "tree"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-9MZPPZZL8C"
+    anonymize_ip: false # default
+
+atom_feed:
+  hide: true
