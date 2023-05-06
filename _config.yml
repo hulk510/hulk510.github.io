@@ -123,7 +123,7 @@ defaults:
         nav: "tree"
 
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-9MZPPZZL8C"
     anonymize_ip: false # default
