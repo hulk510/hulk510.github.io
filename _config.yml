@@ -13,6 +13,7 @@ baseurl: "" # the subpath of your site, e.g. "/blog"
 # teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 # masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+og_image: /assets/images/avatar.png
 
 # Collections
 collections:
@@ -70,6 +71,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hulk510"
+    - label: "note"
+      icon: "far fa-fw fa-sticky-note"
+      url: "https://note.com/hulk510"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -99,16 +103,16 @@ defaults:
       sidebar:
         nav: "tree"
   # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      permalink: /blog/:title # schemaエラーの消し方分からん
-      # share: true
+  # - scope:
+  #     path: ""
+  #     type: posts
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true
+  #     permalink: /blog/:title # schemaエラーの消し方分からん
+  # share: true
   # _resume
   - scope:
       path: ""

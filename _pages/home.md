@@ -1,6 +1,6 @@
 ---
 title: Hi, I'm Haruka.
-layout: home
+layout: single
 permalink: /
 classes: wide
 sidebar:
