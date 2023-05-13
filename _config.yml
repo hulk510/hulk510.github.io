@@ -6,7 +6,7 @@ title: "I am Haruka."
 title_separator: "@"
 subtitle: "Version 1.0" # site tagline that appears below site title in masthead
 name: &name "Haruka"
-description: &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+description: &description "はるかのエンジニア活動とかまとめていけたらなってサイト"
 url: "https://hulk510.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 # repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
