@@ -11,6 +11,6 @@ sidebar:
 
 ## Links
 
-- [やりたいこと（作成中）](/want-to-do)
+- [やりたいこと](https://note.com/hulk510/n/n2229ddd53439)
 - [スキルセット（作成中）](/skill-set)
 - [経歴・職歴](/resume)

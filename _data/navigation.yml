@@ -4,8 +4,8 @@ main:
 tree:
   - title: "Links"
     children:
-      - title: "やりたいこと（作成中）"
-        url: /want-to-do
+      - title: "やりたいこと"
+        url: https://note.com/hulk510/n/n2229ddd53439
       - title: "スキルセット（作成中）"
         url: /skill-set
       - title: "経歴・職歴"
