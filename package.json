@@ -16,8 +16,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "textlint 'tenshoku-draft/**/*.md'",
+    "linter": "textlint _resume/*.md",
+    "linter:fix": "textlint --fix _resume/*md",
     "format": "prettier --write ."
   },
-  "author": "",
+  "author": "hulk510",
   "license": "ISC"
 }
