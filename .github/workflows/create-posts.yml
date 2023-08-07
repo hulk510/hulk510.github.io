@@ -1,0 +1,14 @@
+name: Create Posts
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: create posts
+        run: |
+          touch $(date "+%Y-%m-%d")-slug.md
