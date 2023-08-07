@@ -9,15 +9,13 @@
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-no-todo": "^2.0.1",
-    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-japanese": "^7.0.0",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "main": "index.js",
   "scripts": {
-    "lint": "textlint 'tenshoku-draft/**/*.md'",
-    "linter": "textlint _resume/*.md",
-    "linter:fix": "textlint --fix _resume/*md",
+    "lint": "textlint './**/*.md'",
+    "lint:fix": "textlint --fix ./**/*.md",
     "format": "prettier --write ."
   },
   "author": "hulk510",

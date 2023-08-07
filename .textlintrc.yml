@@ -9,6 +9,3 @@ rules:
       max: 110
   no-todo: true # - [ ] や todo があるとエラーになる
   spellcheck-tech-word: true
-  preset-ja-technical-writing:
-    sentence-length:
-      max: 110
