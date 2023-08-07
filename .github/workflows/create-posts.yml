@@ -4,11 +4,29 @@ on:
   schedule:
     - cron: "0 15 * * *"
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   create:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: create posts
         run: |
-          touch $(date "+%Y-%m-%d")-slug.md
+          cd ./_posts
+          file_name=$(TZ=Asia/Tokyo date "+%Y-%m-%d")-$(echo $RANDOM | base64 | tr -dc A-Za-z).md
+          touch $file_name
+          echo "---" >> $file_name
+          echo "title: 作成中" >> $file_name
+          echo "---" >> $file_name
+      - name: Setup git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config push.default current
+      # commit and push
+      - name: commit and push
+        run: |
+          git add .
+          git commit -m "create post"
+          git push origin main
