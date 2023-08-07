@@ -20,6 +20,9 @@ collections:
   resume:
     output: true
     permalink: /:collection/:path
+  portfolio:
+    output: true
+    permalink: /:collection/:path
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -74,9 +77,6 @@ author:
     - label: "note"
       icon: "far fa-fw fa-sticky-note"
       url: "https://note.com/hulk510"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -87,9 +87,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hulk510"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: ""
 
 # Defaults
 defaults:
@@ -100,19 +97,18 @@ defaults:
     values:
       layout: single
       author_profile: true
-      sidebar:
-        nav: "tree"
   # _posts
-  # - scope:
-  #     path: ""
-  #     type: posts
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     read_time: true
-  #     comments: true
-  #     permalink: /blog/:title # schemaエラーの消し方分からん
-  # share: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      toc: true
+      permalink: /blog/:title/
+      share: true
   # _resume
   - scope:
       path: ""
@@ -125,6 +121,12 @@ defaults:
       classes: wide
       sidebar:
         nav: "tree"
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
 
 analytics:
   provider: "google-gtag"

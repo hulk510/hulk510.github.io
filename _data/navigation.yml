@@ -1,5 +1,13 @@
 # main links
 main:
+  - title: "Portfolio"
+    url: /portfolio
+  - title: "Blog"
+    url: /blog
+  - title: "About"
+    url: /about
+  - title: "Resume"
+    url: /resume
 
 tree:
   - title: "Links"
@@ -8,5 +16,5 @@ tree:
         url: https://note.com/hulk510/n/n2229ddd53439
       - title: "スキルセット"
         url: https://note.com/hulk510/n/n2955b6e029eb
-      - title: "経歴・職歴"
+      - title: "レジュメ"
         url: /resume

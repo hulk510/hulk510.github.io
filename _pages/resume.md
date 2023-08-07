@@ -1,8 +1,7 @@
 ---
-title: 経歴・職歴
+title: Resume
 layout: collection
 permalink: /resume/
 collection: resume
 # entries_layout: grid
-classes: wide
 ---
