@@ -1,5 +1,5 @@
 ---
-title: 適当に書く
+title: 思ったこととか適当に書くところ
 layout: posts
 permalink: /blog/
 ---
