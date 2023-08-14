@@ -54,6 +54,10 @@ github: [metadata]
 # パンクズ
 breadcrumbs: true
 
+# Social Sharing
+twitter:
+  username: kcash510
+
 # Site Author
 author:
   name: *name
@@ -101,12 +105,12 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
+      # read_time: true # 英語で計測してるのか日本語だとうまく計測できてなさそう。
       toc: true
       toc_sticky: true
       permalink: /blog/:title/
       share: true
+      related: true
   # _resume
   - scope:
       path: ""
