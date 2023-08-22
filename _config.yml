@@ -125,11 +125,11 @@ defaults:
       sidebar:
         nav: "tree"
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
 
 analytics:
   provider: "google-gtag"
