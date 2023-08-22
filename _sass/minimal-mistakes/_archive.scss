@@ -95,6 +95,11 @@
   }
 }
 
+.archive__item-time {
+  font-size: $type-size-8;
+  color: $muted-text-color;
+}
+
 .archive__item-caption {
   position: absolute;
   bottom: 0;

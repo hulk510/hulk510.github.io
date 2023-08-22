@@ -31,5 +31,8 @@ post.id %} {% assign title = post.title | markdownify | remove: "
       {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
     </p>
     {% endif %}
+    <time class="archive__item-time" datetime="{{ post.date | date_to_xmlschema }}"
+    >{{ post.date | date: "%Y年%-m月%-d日" }}</time
+    >
   </article>
 </div>
