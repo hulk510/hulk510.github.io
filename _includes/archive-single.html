@@ -31,9 +31,12 @@ post.id %} {% assign title = post.title | markdownify | remove: "
       {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
     </p>
     {% endif %}
+
+    {% if post.collection == "posts" %}
     {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
     <time class="archive__item-time" datetime="{{ post.date | date_to_xmlschema }}"
     >{{ post.date | date: date_format }}</time
     >
+    {% endif %}
   </article>
 </div>
