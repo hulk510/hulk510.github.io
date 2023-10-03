@@ -1,0 +1,11 @@
+
+@import "./dark"; // defualt dark theme
+
+$background-color: #252a34;
+$text-color: #f2dcfc;
+$primary-color: #BA84D5;
+$secondary-color: #40b67b;
+$accent-color: #f0c674;
+$border-color: mix($secondary-color, $background-color, 20%);
+$link-color: mix($primary-color, $text-color, 80%);
+$link-color-visited: mix(#000, $link-color, 40%);
