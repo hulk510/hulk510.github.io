@@ -6,7 +6,7 @@
   {% endif %}
 
   <a
-    href="https://www.reddit.com/submit?url={{ page.url | relative_url }}&title={{ page.title }}"
+    href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}"
     class="btn btn--reddit"
     title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit">
     <i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span>
