@@ -18,6 +18,7 @@ jobs:
           touch $file_name
           echo "---" >> $file_name
           echo "title: 作成中" >> $file_name
+          echo "toc: false">> $file_name
           echo "---" >> $file_name
       - name: Setup git
         run: |
