@@ -8,7 +8,7 @@ function generatePost() {
   const file_name = `${year}-${month}-${day}-${Math.random()
     .toString(36)
     .slice(-8)}.md`;
-  const file_path = `./_draft/${file_name}`;
+  const file_path = `./_drafts/${file_name}`;
   const title = "作成中";
 
   const content = `---
