@@ -16,7 +16,8 @@
   "scripts": {
     "lint": "textlint './**/*.md'",
     "lint:fix": "textlint --fix ./**/*.md",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "gen:post": "node ./scripts/generatePost.js"
   },
   "author": "hulk510",
   "license": "ISC"
